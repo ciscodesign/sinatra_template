@@ -2,5 +2,4 @@
 require './app'
 run MyApp
 
-## To run:
-# rackup -p 4567
+map ('/'){run ApplicationController}
