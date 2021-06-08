@@ -10,7 +10,7 @@ end
 
 RSpec.configure do |config|
   config.include RSpecMixin
-
+  ENV['RACK_ENV'] = 'test'
   #before test stuff
   config.before(:suite) do
     warn "Environment is: #{MyApp.settings.environment}"
